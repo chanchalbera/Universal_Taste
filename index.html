@@ -52,15 +52,17 @@
             border-radius: 4px;
           "
           >Universal</span> <span style="font-family: 'Fasthand', cursive; color: aqua; font-size: larger;">Taste</span></h1>
-      <div class="search-bar">
-        <input type="text" placeholder="Search" class="search-input" />
-        <i class="fas fa-search search-icon"></i>
-      </div>
+          <div class="search-bar">
+            <input type="text" placeholder="Search" class="search-input" />
+            <i class="fas fa-search search-icon"></i>
+            <i class="fas fa-chart-bar chart-icon"></i>
+          </div>
+          
       <nav class="sidebar">
         <ul class="sidebar-nav">
           <li><a href="#">Home</a></li>
-          <li><a href="#">Recipes</a></li>
-          <li><a href="#">Menu</a></li>
+          <li><a href="#recipe">Recipes</a></li>
+          <li><a href="#our-menu">Menu</a></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#contact_us">Contact Us</a></li>
         </ul>
@@ -80,7 +82,7 @@
         <a href="#" class="btn btn-primary btn-large">Get Started Now</a>
       </div>
     </section>
-    <section class="featured-recipes">
+    <section class="featured-recipes" id="recipe">
       <h1 class="section-title">Featured Recipes</h1>
       <div class="container container_recipes">
         <div class="recipe-card">
@@ -113,25 +115,27 @@
       </div>
     </section>
     <!-- <== Menu section start ==> -->
-    <section>
+    <section id="our-menu">
       <div id="menu-section">
-        <h1>Our menu</h1>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque sunt
-          magni repel lat? lorem12 Lorem, ipsum dolor sit amet consectetur
-          adipisicing elit. Reiciendis, autem!
+        <h1>Our Menu</h1>
+        <p class="our-menu-paragraph">
+          Explore our delectable offerings carefully crafted to tantalize your taste buds and satisfy your cravings. From savory breakfast classics to mouthwatering main dishes, refreshing drinks, and delightful desserts, we have something for everyone.
+          Indulge in our diverse menu featuring a wide range of flavors and culinary creations. Whether you're in the mood for a hearty omelette, a juicy steak, a refreshing smoothie, or a decadent chocolate cake, we have it all.
         </p>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing. Lorem ipsum dolor
-          sit amet.
+        <p class="our-menu-paragraph">
+         
         </p>
-        <p>Lorem, ipsum dolor. Lorem ipsum dolor sit amet.</p>
+        <p class="our-menu-paragraph">
+          Discover the perfect harmony of taste, quality, and presentation with each item on our menu. We source the finest ingredients and combine them with skillful techniques to create memorable dining experiences that leave a lasting impression.
+        </p>
         <button class="active">All</button
         ><button class="button">Breakfast</button
         ><button class="button">Main Dishes</button
         ><button class="button">Drinks</button
-        ><button class="button">Dishes</button>
+        ><button class="button">Desserts</button>
       </div>
+    </section>
+    <section>
       <div id="menu">
         <div class="menu-item-container">
           <div class="lottie-player">
@@ -146,12 +150,10 @@
             ></lottie-player>
           </div>
           <h2>Classic Burger</h2>
-
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum illo
-            cupiditate amet deleniti minus ex quo nihil laboriosam voluptas.
-            Provident, perferendis explicabo
+            Savor the timeless taste of our Classic Burger. Made with high-quality beef, fresh vegetables, and a secret blend of spices, it's a mouthwatering delight that never goes out of style.
           </p>
+          <p class="price">$9.99</p>
         </div>
         <div class="menu-item-container">
           <div class="lottie-player">
@@ -167,10 +169,9 @@
           </div>
           <h2>Milkshake</h2>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum illo
-            cupiditate amet deleniti minus ex quo nihil laboriosam voluptas.
-            Provident, perferendis.
+            Treat yourself to our creamy and indulgent Milkshake. Choose from a variety of flavors, from classic vanilla and chocolate to exotic options like strawberry cheesecake and salted caramel. It's the perfect accompaniment to any meal.
           </p>
+          <p class="price">$4.99</p>
         </div>
         <div class="menu-item-container">
           <div class="lottie-player">
@@ -186,10 +187,9 @@
           </div>
           <h2>Classic Fries</h2>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum illo
-            cupiditate amet deleniti minus ex quo nihil laboriosam voluptas.
-            Provident, perferendis.
+            Crispy on the outside, fluffy on the inside our Classic Fries are the perfect side dish for any meal. Seasoned to perfection and cooked to golden perfection, they'll satisfy your craving for deliciousness.
           </p>
+          <p class="price">$2.99</p>
         </div>
         <div class="menu-item-container">
           <div class="lottie-player">
@@ -205,13 +205,13 @@
           </div>
           <h2>Pancake</h2>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum illo
-            cupiditate amet deleniti minus ex quo nihil laboriosam voluptas.
-            Provident, perferendis explicabo
+            Start your day off right with our fluffy Pancakes. Made from a secret family recipe, they're light, fluffy, and oh-so-delicious. Served with your choice of toppings, such as fresh fruits, maple syrup, or whipped cream.
           </p>
+          <p class="price">$6.99</p>
         </div>
       </div>
     </section>
+    
     <!-- <== Menu section end ==> -->
 
     <section class="about-us" id="about">
@@ -232,13 +232,6 @@
           <div class="about-container">
             <h2>Our story started</h2>
             <h2>back in <strong>1984.</strong></h2>
-            <p class="paragraph">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Reprehenderit iste eveniet blanditiis voluptas ullam cupiditate
-              earum obcaecati? Dolores laborum perferendis earum repellat
-              accusamus? Cupiditate, repellat nobis. Placeat odit id
-              praesentium.
-            </p>
           </div>
           <p>
             At Universal Taste, we are passionate about food and believe that
@@ -270,9 +263,9 @@
             opportunities. We'd love to hear from you!
           </p>
           <div class="contact-info">
-            <p>Email: info@deliciousdelights.com</p>
-            <p>Phone: 123-456-7890</p>
-            <p>Address: 123 Main Street, City, Country</p>
+            <p><strong>Email:</strong> info@Universaltaste.com</p>
+            <p> <strong>Phone:</strong> 123-456-7890</p>
+            <p> <strong>Address:</strong>  123 Main Street, Kolkata, IND</p>
           </div>
           <form>
             <input type="text" placeholder="Your Name" />
@@ -290,10 +283,10 @@
         </p>
         <ul class="footer-links">
           <li><a href="#">Home</a></li>
-          <li><a href="#">Recipes</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="#recipe">Recipes</a></li>
+          <li><a href="#our-menu">Menu</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact_us">Contact Us</a></li>
         </ul>
       </div>
     </footer>

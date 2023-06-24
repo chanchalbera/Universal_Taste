@@ -1,12 +1,6 @@
 /* Updated responsive styles for the sidebar/navbar */
 @media only screen and (max-width: 768px) {
-  .sidebar {
-    left: -200px;
-  }
-
-  .sidebar.active {
-    left: 0;
-  }
+  
 
   .sidebar-toggler {
     display: block;
@@ -30,12 +24,48 @@
     display: flex;
     flex-direction: column;
   }
-  .sidebar{
-    width: 22%;
-  }
   p{
     font-size: 14px;
     text-align: justify;
+    font-family: 'Overpass', sans-serif;
+  }
+  ul li a{
+    font-size: 14px;
+  }
+  .sidebar-toggler{
+    height: 55px;
+    width: 55px;
+  }
+  .hero::before{
+    height: 580px;
+  }
+  .sidebar{
+    width: 25%;
+    max-width: 30%;
+    left: -270px;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+  .sidebar-nav a{
+    padding: 24px 2px;
+    font-size: 25px;
+  }
+  .hero-description{
+    font-size: 28px;
+    text-align: center;
+    color: black;
+  }
+  .hero-subtitle{
+    font-size: 32px;
+    margin-bottom: 0;
+  }
+  .hero{
+    margin-top: -45px;
+  }
+  .featured-recipes{
+    margin-top: 120px;
   }
 }
 
