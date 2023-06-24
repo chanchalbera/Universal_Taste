@@ -55,7 +55,7 @@
           <div class="search-bar">
             <input type="text" placeholder="Search" class="search-input" />
             <i class="fas fa-search search-icon"></i>
-            <i class="fas fa-chart-bar chart-icon"></i>
+            <i class="fas fa-shopping-cart cart-icon"></i>
           </div>
           
       <nav class="sidebar">
@@ -72,7 +72,7 @@
       <div class="container">
         <h1 class="hero-title" style="font: optional">Savor the Flavors</h1>
         <p class="hero-subtitle" style="color: black">
-          Discover a world of mouth-watering recipes and culinary inspiration
+          Discover a world of mouth-watering recipes and culinary inspiration.
         </p>
         <p class="hero-description">
           Whether you're a seasoned chef or just getting started in the kitchen,
@@ -294,5 +294,13 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
     </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".search-icon").click(function() {
+          $(".search-input").focus();
+        });
+      });
+    </script>
   </body>
 </html>

@@ -29,6 +29,9 @@
     text-align: justify;
     font-family: 'Overpass', sans-serif;
   }
+  .hero-subtitle{
+    text-align: center;
+  }
   ul li a{
     font-size: 14px;
   }

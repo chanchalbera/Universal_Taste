@@ -50,15 +50,15 @@ h1 {
   font-size: 26px;
   transition: 1s all;
 }
-.chart-icon {
-  color: #0b0a0a;
+.cart-icon {
+  color: #161002;
   cursor: pointer;
   transition: color 0.3s, transform 0.3s;
   margin-top: 3%;
-  font-size: 26px;
+  font-size: 24px;
 }
 
-.chart-icon:hover {
+.cart-icon:hover {
   color: #333;
   transform: scale(1.1);
 }
