@@ -1,0 +1,403 @@
+/* Global Styles */
+/* Basic styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+p {
+  font-family: 'Overpass', sans-serif;
+  color: #292626;
+}
+
+h1 {
+  font-family: 'Tilt Prism', cursive;
+  text-align: center;
+  font-size: 45px;
+  margin: 22px 2px;
+  color: rgb(78, 65, 116);
+  /* text-transform: uppercase; */
+  text-shadow: 5px 10px 12px black;
+}
+
+.search-bar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+}
+
+.search-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.search-icon {
+  font-size: 20px;
+  margin-left: 4px;
+  padding: 8px;
+  color: rgb(27, 26, 26);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-icon:hover {
+  font-size: 26px;
+  transition: 1s all;
+}
+
+
+
+/* Updated styles for the sidebar/navbar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 10%;
+  background-color: transparent;
+  color: #141111;
+  padding: 10px;
+  transition: left 0.3s;
+  /* border-right: 2px solid blueviolet; */
+  padding-top: 55px;
+}
+
+.sidebar-toggler {
+  position: fixed;
+  top: 26px;
+  left: 2%;
+  font-weight: 600;
+  font-size: 18px;
+  background-color: rgb(130, 124, 124);
+  color:#000000;
+  cursor: pointer;
+  display: inline-block;
+  z-index: 1;
+}
+.sidebar-nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+  margin-top: 38px;
+}
+
+.sidebar-nav li {
+  margin-bottom: 5px;
+  margin: 12px 0;
+  text-align: center;
+}
+
+.sidebar-nav a {
+  display: block;
+  padding: 10px;
+  background-color: #484545;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-nav a:hover {
+  background-color: #555;
+}
+
+.sidebar.active {
+  left: -270px;
+}
+
+/* Rest of the CSS code remains the same */
+
+.content {
+  flex-grow: 1;
+  padding: 10px;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 200px;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  padding: 10px;
+  padding-bottom: 1px;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 0;
+  top: -57px;
+  height: 200px;
+}
+.hero::before {
+  content: "";
+  background-image: url('../Image/Food-background.webp');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  z-index: -1;
+  opacity: .6;
+}
+.hero-title {
+  font-size: 48px;
+  color: #191818;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 24px;
+  color: #292626;
+  margin-bottom: 40px;
+}
+.hero-description {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e65c00;
+}
+
+.btn-primary {
+  background-color: #ff6600;
+}
+
+.btn-secondary {
+  background-color: #333;
+}
+
+/* Featured Recipes Section */
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.recipe-card {
+  width: 300px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 15px;
+  background-color: rgb(233, 227, 227);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.recipe-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  border: 2px solid;
+  box-shadow: 2px 3px 0px;
+  padding: 2px;
+  background-color: #fba40161;
+  color: rgb(22, 22, 22);
+}
+.recipe-card h3:hover {
+  /* font-size: 25px; */
+  transition: 1s all;
+  rotate:8deg;
+  cursor: pointer;
+}
+
+
+.recipe-card p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Menu Item Container Section */
+#menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-section {
+  text-align: center;
+}
+#menu-section {
+  text-align: center;
+}
+
+button.active {
+  border: none;
+  border-radius: 4px;
+  background-color: #4286f4;
+  color: #fff;
+}
+button:hover{
+  font-size: 18px;
+  background-color: #4286f4;
+  transition: 1s all;
+  color: #fff;
+}
+
+button {
+  font-weight: bold;
+  border: none;
+  margin: 5px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #bbad47;
+}
+
+.menu-item-container {
+  background-color: #f2f2f2;
+  margin: 20px;
+  text-align: center;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.menu-item-container p {
+  padding: 10px;
+}
+
+/* About Us Section */
+.about-us {
+  padding: 10px 0;
+  background-color: #f2f2f2;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-content img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.about-container strong{
+  color: red;
+}
+.about-container h2, h2{
+  font-size: 36px;
+  padding: 0px 38px;
+  text-align: center;
+  
+
+}
+.about-container p, p{
+  padding: 0px 38px; 
+}
+
+/* Contact Us Section */
+.contact-us {
+  /* background-color: #f5f5f5; */
+  padding: 50px 0;
+}
+.contact-us::before {
+  content: "";
+  background-image: url('../Image/Contact1.jpg');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 800px;
+  z-index: -1;
+  opacity: .6;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-info {
+  margin-bottom: 30px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+form {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  height: 120px;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+}
