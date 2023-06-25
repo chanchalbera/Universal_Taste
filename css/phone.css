@@ -1,8 +1,5 @@
-/* Updated responsive styles for the sidebar/navbar */
 @media only screen and (max-width: 768px) {
-  
-
-  .sidebar-toggler {
+    .sidebar-toggler {
     display: block;
   }
 }
@@ -71,8 +68,6 @@
     margin-top: 120px;
   }
 }
-
-/* Responsive Styles */
 @media only screen and (max-width: 768px) {
   .sidebar {
     display: none;
@@ -119,105 +114,66 @@
     max-width: 100%;
   }
 }
-/* Responsive Styles */
-/* Mobile devices */
 @media only screen and (max-width: 480px) {
-  /* Adjust the sidebar width for smaller screens */
   .sidebar {
     width: 100%;
   }
-
-  /* Adjust the sidebar toggler positioning */
   .sidebar-toggler {
     top: 20px;
     left: 20px;
   }
-
-  /* Adjust the main content margin */
   .content {
     margin-left: 0;
   }
-
-  /* Adjust the hero section padding */
   .hero {
     padding: 50px 0;
   }
-
-  /* Adjust the font size of the hero title */
   .hero-title {
     font-size: 32px;
   }
-
-  /* Adjust the font size of the hero subtitle */
   .hero-subtitle {
     font-size: 18px;
   }
-
-  /* Adjust the recipe card width */
   .recipe-card {
     width: 90%;
     margin: 0 auto 15px;
   }
-
-  /* Adjust the menu item container margin */
   .menu-item-container {
     margin: 10px;
   }
-
-  /* Adjust the about content flex direction */
   .about-content {
     flex-direction: column;
   }
-
-  /* Adjust the contact form width */
   form {
     max-width: 100%;
   }
 }
-/* Tablets and small laptops */
 @media only screen and (max-width: 768px) {
-  /* Adjust the sidebar width for smaller screens */
   .sidebar {
     width: 30%;
   }
-
-  /* Adjust the main content margin */
   .content {
     margin-left: 30%;
   }
-
-  /* Adjust the hero section padding */
   .hero {
     padding: 80px 0;
   }
-
-  /* Adjust the font size of the hero title */
   .hero-title {
     font-size: 42px;
   }
-
-  /* Adjust the font size of the hero subtitle */
   .hero-subtitle {
     font-size: 22px;
   }
-
-  /* Adjust the recipe card width */
   .recipe-card {
     width: 45%;
     margin: 0 auto 15px;
   }
-
-  /* Adjust the menu item container margin */
   .menu-item-container {
     margin: 10px;
   }
-
-  /* Adjust the about content flex direction */
   .about-content {
     flex-direction: column;
   }
-
-  /* Adjust the contact form width */
   form {
     max-width: 90%;
   }
