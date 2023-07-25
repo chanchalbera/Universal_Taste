@@ -9,7 +9,8 @@
     display: flex;
     flex-direction: column;
   }
-
+  
+  
   .btn {
     display: block;
     width: fit-content;
@@ -239,8 +240,9 @@
     }
 
     .recipe-card {
-      width: 45%;
+      width: 75%;
       margin: 0 auto 15px;
+      padding-bottom:15px ;
     }
 
     .menu-item-container {
